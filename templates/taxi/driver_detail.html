@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Driver: {{ driver.name }}</h1>
+  <div>
+    <h3>Cars:</h3>
+      <hr>
+      <p class="text-muted">{{ car.id }}</p>
+      <p>{{ car.model }} {{ car.manufacturer }}
+      </p>
+  </div>
+{% endblock %}
