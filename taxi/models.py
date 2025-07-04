@@ -7,12 +7,6 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
-    # def get_absolute_url(self):
-    #     return reverse(
-    #         "taxi:manufacturer-list",
-    #         args=[]
-    #     )
-
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
